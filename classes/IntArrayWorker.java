@@ -99,10 +99,17 @@ public class IntArrayWorker
     }
   }
 
-  public int getCount(int count){
-    for(int i=0; i<matrix.length; i++){
+  public int getCount(int check){
+    int count=0;
+    for(int row=0; row<matrix.length; row++){
+      for(int col=0; col<matrix[0].length; col++){
+        if(matrix[row][col]==check){
+          count+=1;
+        }
+      }
 
     }
+    return count;
   }
  
 }
