@@ -124,11 +124,11 @@ public class IntArrayWorker
   }
 
   public int getColTotal(int column){
-      int length=0;
-      for(int i=0; i<matrix[column].length; i++){
-          length+=1;
+      int total=0;
+      for(int i=0; i<matrix.length; i++){
+          total+=matrix[i][column];
       }
-      return length;
+      return total;
   }
 
 }
