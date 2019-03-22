@@ -30,6 +30,14 @@ public class PictureTester
     beatifulCat.negate();
     beatifulCat.explore();
   }
+
+  public static void testGrayscale(){
+    Picture beatifulCat=new Picture("beautifulCat.jpg");
+    beatifulCat.explore();
+    beatifulCat.grayScale();
+    beatifulCat.explore();
+  }
+
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
   {
@@ -75,8 +83,8 @@ public class PictureTester
    // testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
-    testNegate();
-    //testGrayscale();
+   // testNegate();
+    testGrayscale();
     //testFixUnderwater();
    // testMirrorVertical();
  //   testMirrorTemple();
