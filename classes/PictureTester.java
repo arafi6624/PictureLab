@@ -102,15 +102,6 @@ public class PictureTester
     swan.explore();
   }
 
-  public static void lookatsnowman(){
-    Picture snowman = new Picture("snowman.jpg");
-    snowman.explore();
-  }
-
-  public static void lookattemple(){
-    Picture temple = new Picture("temple.jpg");
-    temple.explore();
-  }
   
   /** Main method for testing.  Every class can have a main
     * method in Java */
@@ -144,7 +135,5 @@ public class PictureTester
     //testSetRedToHalfValueInTopHalf();
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
-    //lookatsnowman();
-    //lookattemple();
   }
 }
