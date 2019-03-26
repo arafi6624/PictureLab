@@ -86,6 +86,17 @@ public class PictureTester
     snowman.mirrorArms();
     snowman.explore();
   }
+
+  public static void exploreSeagull(){
+    Picture seagull=new Picture("seagull.jpg");
+    seagull.explore();
+  }
+  public static void testShiftGull(){
+    Picture seagull=new Picture("seagull.jpg");
+    seagull.explore();
+    seagull.shiftGull();
+    seagull.explore();
+  }
   /** Method to test the collage method */
   public static void testCollage()
   {
@@ -122,8 +133,8 @@ public class PictureTester
    // testMirrorHorizontalBotToTop();
    // testMirrorVerticalRightToLeft();
     //testMirrorTemple();
-    testMirrorArms();
-    //testMirrorGull();
+    //testMirrorArms();
+    testShiftGull();
     //testMirrorDiagonal();
   //  testCollage();
     //testCopy();
@@ -135,5 +146,6 @@ public class PictureTester
     //testSetRedToHalfValueInTopHalf();
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
+    //exploreSeagull();
   }
 }
